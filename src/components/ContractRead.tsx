@@ -11,7 +11,7 @@ export default function ContractRead() {
   });
 
   const { data: symbol } = useContractRead({
-    address: contractAddress,
+    address: contractAddress,        
     abi: contractABI,
     functionName: "symbol",
   });
@@ -20,7 +20,8 @@ export default function ContractRead() {
     address: contractAddress,
     abi: contractABI,
     functionName: "balanceOf",
-    args: [address ? address : "0x"],
+    args: [address ? address : "0xf443864ba5d5361bbc54298551067194f980a635
+"],
     watch: true,
   });
 
